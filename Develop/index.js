@@ -13,6 +13,12 @@ const questions = [
 },
 {
     type: "input",
+    message:"What does your project do?",
+    name:"description",
+    validate: (value)=>{if (value){return true} else {return "Value required to continue"}},
+},
+{
+    type: "input",
     message: "How do you install app?",
     name:"installation",
     validate: (value)=>{if (value){return true} else {return "Value required to continue"}},
